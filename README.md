@@ -15,7 +15,7 @@ How can we de-bias automated facial recognition models for greater accuracy for 
 
 ## Specific problem statement
 
-From our research, we have found that Blacks tend to be wrongly classified [10 to 100 times more than Caucasian faces](https://www.technologyreview.com/2019/12/20/79/ai-face-recognition-racist-us-government-nist-study/) with the latest facial recognition systems. Furthermore, for "one-to-many" searching, which involves determining if a subject is present in a database, "systems had the **worst false positive rates for African-American women**", putting them "at the **highest risk for being falsely accused of a crime**".
+From our research, we have found that people with darker skin tone tend to be wrongly classified [10 to 100 times more than Caucasian faces](https://www.technologyreview.com/2019/12/20/79/ai-face-recognition-racist-us-government-nist-study/) with the latest facial recognition systems. Furthermore, for "one-to-many" searching, which involves determining if a subject is present in a database, "systems had the **worst false positive rates for African-American women**", putting them "at the **highest risk for being falsely accused of a crime**".
 
 ## Proposed solution
 
@@ -30,6 +30,20 @@ With current models having a higher error rate in [recognising faces of people o
 First, we dived into facial recognition software such as RetinaFace and tested it on UTKFace dataset. However, testing on these models took far longer than expected and we decided to go into facial detection instead.
 
 Next, we wrote a programme using opencv to detect faces of people. Afterwhich, we used PIL to enhance these images using a few different features.
+
+## Website Development
+
+We have created a website as a product. The problem of there being poor facial recognition for people with darker skin tones can and should be solved with simply having more labeled training data. Unfortunately, we quickly discovered that labeled training data of minorities is substantially more obscure than that of the majority. In a bid to solve this, my group designed a website that hosts a publicly available dataset of minority individuals. The features are as follows
+
+1. Create an account and log in, which is facilitated by [CockroachDB](https://www.cockroachlabs.com/)
+2. Upload an image of themselves, which our AI will then recognise as whether it is a face, and will contribute to the dataset if approved
+3. Users will be able to download the data
+4. [Coil](https://coil.com/) users who visit the site will contribute funds to support the maintenance of the site and the redistribution to the contributors of the dataset
+5. All users can donate to the site to contribute funds to support the maintenance of the site and the redistribution to the contributors of the dataset
+
+Unfortunately, due to time constraints, some of these features are only available for demo and do not work.
+email: admin
+password: admin123
 
 ## Future work
 Due to time constraints, we were only able to enhance a limited number of images, and pass an even fewer number through the existing state-of-the-art facial recognition model, RetinaFace. **More processed images can, and should be fed into existing facial recognition systems to verify our results**.
