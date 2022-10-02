@@ -21,6 +21,12 @@ From our research, we have found that people with darker skin tone tend to be wr
 
 While our team is **not** working on facial classification due to time constraints (current models take far longer to detect the ethnicity of a face than to recognise a face), we seek to improve facial recognition softwares for individuals with a darker skin tone. Specifically, **we investigated whether enhancing images taken in low light would significantly improve the accuracy of algorithms in detecting faces**. To do this, we leveraged the [LLFlow](https://github.com/wyf0912/LLFlow) model released in 2022 by Yufei Wang, Renjie Wan, Wenhan Yang, Haoliang Li, Lap-pui Chau, Alex C. Kot. While the model has done well in enhancing images in low light, the processed images have not been tested with facial recognition systems. 
 
+![Enhancing low light images to improve facial recognition systems](assets/facial-recognition-on-enhanced-images.gif)
+
+Note: Our research **does not** claim to improve the accuracy of facial classification systems yet. Further studies would have to be done in order to
+1. Verify if these enhanced images would also reduce false positive rates in "one-to-many" searching
+2. Verify if the accuracy of facial **classification** (not recognition) systems would increase by a significant extent too
+
 At the same time, we are aware that one of the key challenges of AI is [bias built into data](https://www.brookings.edu/blog/techtank/2019/01/03/artificial-intelligence-and-bias-four-key-challenges/). As such, **we developed a web application, integrated wtih Coil API, to incentivise individuals from marginalised groups to upload pictures of themselves**, crowdsourcing for more data. Specifically, individuals who upload pictures from more marginalised groups (they may self-select a category, and images are to be vetted by a content moderation team), will receive a monetary incentive. These monetary incentives are to be funded by other individuals looking to use our dataset or donors that believe in this cause.
 
 ## Research in Ethical AI
