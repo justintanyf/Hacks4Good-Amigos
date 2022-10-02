@@ -11,7 +11,21 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "axios": "^0.27.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "googleapis": "^89.0.0",
+    "moment-timezone": "^0.5.34",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.0.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.7.0",
+    "puppeteer": "^7.0.4",
+    "realm": "^10.19.5",
+    "socket.io": "^4.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
