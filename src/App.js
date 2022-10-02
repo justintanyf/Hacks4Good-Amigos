@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
 function App() {
   return (
@@ -83,9 +82,13 @@ function App() {
                               </a>
                           </div>
                           <div className="w-1/2 text-right">
-                              <Link to="/auth/register" className="text-blueGray-200">
-                                  <small>Create new account</small>
-                              </Link>
+                              <a
+                                  href="#pablo"
+                                  onClick={(e) => e.preventDefault()}
+                                  className="text-blueGray-200"
+                              >
+                                  <small>Create New Account</small>
+                              </a>
                           </div>
                       </div>
                   </div>
