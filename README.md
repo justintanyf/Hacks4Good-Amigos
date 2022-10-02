@@ -31,6 +31,13 @@ First, we dived into facial recognition software such as RetinaFace and tested i
 
 Next, we wrote a programme using opencv to detect faces of people. Afterwhich, we used PIL to enhance these images using a few different features.
 
+## Image enhancer & classification
+
+### prerequisites
+1. `git clone https://github.com/wyf0912/LLFlow`
+2. Open jupyter notebook and run all cells
+
+
 ## Website Development
 
 We have created a website as a product. The problem of there being poor facial recognition for people with darker skin tones can and should be solved with simply having more labeled training data. Unfortunately, we quickly discovered that labeled training data of minorities is substantially more obscure than that of the majority. In a bid to solve this, my group designed a website that hosts a publicly available dataset of minority individuals. The features are as follows
