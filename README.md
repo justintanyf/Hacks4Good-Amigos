@@ -38,10 +38,11 @@ Our hypothesis is that if images may be enhanced using AI to improve the accurac
 
 ### Installation guide
 1. `git clone https://github.com/seancze/LLFlow`
-   1. Follow the configuration settings found in the repository's `README.md` 
+   1. Follow the configuration settings found in the repository's `README.md` (more specific instructions on how to get your image enhancer running may be found in `final.ipynb`)
 2. `pip install -r requirements.txt`
 3. Download the [Dark Face Dataset](https://www.kaggle.com/datasets/soumikrakshit/dark-face-dataset) on Kaggle into your `./images/dark-face` folder
-4. Open the `final.ipynb` jupyter notebook and run all cells
+4. Download [Part 1 of the UTK Face Dataset](https://susanqq.github.io/UTKFace/) into your `./images/UTKFace/part1` folder
+5. Open the `final.ipynb` jupyter notebook and run all cells
 
 ## Website Development
 
