@@ -1,6 +1,6 @@
-# Hacks4Good-Amigos
+# AIHacks4Good-FacialRecognitionForAll
 
-### Team Name: Amigos
+### Team Name: FacialRecognitionForAll
 
 ### Team Members
 - [Duncan](https://github.com/ruironggg)
