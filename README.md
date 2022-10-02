@@ -1,8 +1,8 @@
-# AIHacks4Good-FacialRecognitionForAll
+# AIHacks4Good - FacialRecognitionForAll
 
-### Team Name: FacialRecognitionForAll
+![Before and after image processing](assets/before-and-after.png)
 
-### Team Members
+## Team Members
 - [Duncan](https://github.com/ruironggg)
 - [Sean](https://github.com/seancze)
 - [Justin](https://github.com/justintanyf)
