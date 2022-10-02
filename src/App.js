@@ -1,6 +1,14 @@
 import React, {useState} from "react";
 
+const { Client } = require("pg");
+
+
+const client = new Client(process.env.DATABASE_URL);
+
+await client.connect()
+
 function App() {
+    const [loggedIn, setLoggedIn] = useState(false)
     const [state , setState] = useState({
         email : "",
         password : ""
@@ -14,19 +22,24 @@ function App() {
         }))
     }
 
-    const getPassword(email) {
-
-    }
-
-    const handleSubmitClick = (e) => {
+    const handleSubmitClick = async (e) => {
         e.preventDefault();
-        if(state.password === state.confirmPassword) {
-            sendDetailsToServer()
+        const res = await client.query('SELECT COUNT(*) as counter' +
+            'where id=$1 and pw=$2', [state.email, state.password])
+        const value = res.rows[0].message
+        if (value === 1) {
+            setLoggedIn(true);
+            return;
         } else {
-            props.showError('Passwords do not match');
+            return;
         }
     }
-  return (
+  return loggedIn
+      ? (
+          <>
+              YAY
+          </>
+      ) : (
       <>
           <div className="container mx-auto px-4 h-full">
               <div className="flex content-center items-center justify-center h-full">
