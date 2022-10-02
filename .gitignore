@@ -4,3 +4,4 @@ images
 .DS_Store
 .ipynb_checkpoints/
 venv/
+results/

@@ -32,11 +32,16 @@ First, we dived into facial recognition software such as RetinaFace and tested i
 Next, we wrote a programme using opencv to detect faces of people. Afterwhich, we used PIL to enhance these images using a few different features.
 
 ## Image enhancer & classification
+We applied the [LLFlow](https://github.com/wyf0912/LLFlow) model onto a dataset filled with extremely dark images that contain multiple faces to evaluate if the latest state-of-the-art facial recognition systems ([RetinaFace](https://github.com/serengil/retinaface)) will have a significantly greater facial recognition accuracy.
 
-### prerequisites
-1. `git clone https://github.com/wyf0912/LLFlow`
-2. Open jupyter notebook and run all cells
+Our hypothesis is that if images may be enhanced using AI to improve the accuracy of facial recognition models, there will be a decrease in false positive rates for facial classification models performing a "one-to-many" search.
 
+### Installation guide
+1. `git clone https://github.com/seancze/LLFlow`
+   1. Follow the configuration settings found in the repository's `README.md` 
+2. `pip install -r requirements.txt`
+3. Download the [Dark Face Dataset](https://www.kaggle.com/datasets/soumikrakshit/dark-face-dataset) on Kaggle into your `./images/dark-face` folder
+4. Open the `final.ipynb` jupyter notebook and run all cells
 
 ## Website Development
 
@@ -75,10 +80,3 @@ On the less technical side, we honed our abilities in
 2. Ideating & communicating effectively as our team met-up physically for this hackathon
 3. Pair programming (which involves not just the actual programming, but a lot of communication)
 4. Delegation of work
-
-@article{wang2021low,
-  title={Low-Light Image Enhancement with Normalizing Flow},
-  author={Wang, Yufei and Wan, Renjie and Yang, Wenhan and Li, Haoliang and Chau, Lap-Pui and Kot, Alex C},
-  journal={arXiv preprint arXiv:2109.05923},
-  year={2021}
-}
